@@ -1,19 +1,16 @@
-import FetchDataEffect from "./components/UseEffect/FetchDataEffect";
+import { createContext } from "react";
+import ComponentA from "./components/PropDrilling/ComponentA";
+
+export const Data = createContext();
+
 const App = () => {
+    const name = "n2";
+
     return (
         <div>
-            {/* <Counter />;
-            <TodoList />
-            <Profile />
-            <ShoppingList /> */}
-
-            {/* <CopyInput /> */}
-            {/* <Switcher /> */}
-            {/* <h2>{value}</h2>
-            <button onClick={() => setValue(value + 1)}>Increment</button>
-            <button onClick={() => setSomething(something + 1)}>Increment some</button>
-            <Data /> */}
-            <FetchDataEffect />
+            <Data.Provider value={name}>
+                <ComponentA />
+            </Data.Provider>
         </div>
     );
 };
