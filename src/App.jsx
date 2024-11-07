@@ -1,11 +1,14 @@
 import { StrictMode } from "react";
-import DataProvider from "./components/PropDrilling/DataProvider";
+import UserProfile from "./components/PropDrilling/ContextChellange/UserProfile";
+import { UserProvider } from "./components/PropDrilling/ContextChellange/UserContext";
 
 const App = () => {
     return (
         <div>
             <StrictMode>
-                <DataProvider />
+                <UserProvider>
+                    <UserProfile />
+                </UserProvider>
             </StrictMode>
         </div>
     );
