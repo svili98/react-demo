@@ -1,16 +1,12 @@
-import { createContext } from "react";
-import ComponentA from "./components/PropDrilling/ComponentA";
-
-export const Data = createContext();
+import { StrictMode } from "react";
+import DataProvider from "./components/PropDrilling/DataProvider";
 
 const App = () => {
-    const name = "n2";
-
     return (
         <div>
-            <Data.Provider value={name}>
-                <ComponentA />
-            </Data.Provider>
+            <StrictMode>
+                <DataProvider />
+            </StrictMode>
         </div>
     );
 };
