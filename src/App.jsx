@@ -1,17 +1,7 @@
-import { StrictMode } from "react";
-import UserProfile from "./components/PropDrilling/ContextChellange/UserProfile";
-import { UserProvider } from "./components/PropDrilling/ContextChellange/UserContext";
+import Counter from "./components/Reducer/ReducerChallange/Counter";
 
 const App = () => {
-    return (
-        <div>
-            <StrictMode>
-                <UserProvider>
-                    <UserProfile />
-                </UserProvider>
-            </StrictMode>
-        </div>
-    );
+    return <Counter />;
 };
 
 export default App;

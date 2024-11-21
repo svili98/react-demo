@@ -1,9 +1,12 @@
 import { createContext, useState } from "react";
 
+// Create a Context
 const UserContext = createContext();
 
+// Create a Provider component
 const UserProvider = ({ children }) => {
-    const [user, setUser] = useState({ name: "Svili" });
+    const [user, setUser] = useState({ name: "John Doe" });
+
     const updateUser = (newName) => {
         setUser({ name: newName });
     };
