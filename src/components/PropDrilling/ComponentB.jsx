@@ -1,9 +1,9 @@
-import ComponmentC from "./ComponmentC";
+import ComponentC from "./ComponmentC";
 
 const ComponentB = () => {
     return (
         <div>
-            <ComponmentC />
+            <ComponentC />
         </div>
     );
 };

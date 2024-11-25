@@ -1,13 +1,9 @@
+import { useEffect } from "react";
 import { Data } from "./DataProvider";
 
-const ComponmentC = () => {
-    return (
-        <Data.Consumer>
-            {(name) => {
-                return <h1>{name}</h1>;
-            }}
-        </Data.Consumer>
-    );
+const ComponentC = () => {
+    const name = useEffect(Data);
+    return <h1>my name is {name}</h1>;
 };
 
-export default ComponmentC;
+export default ComponentC;
